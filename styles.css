@@ -131,7 +131,7 @@ main{
     background-color: var(--cobalt-blue-a);
 }
 
-#skill-text{
+.skill-text{
     display: flex;
 }
 
@@ -155,12 +155,12 @@ main{
     margin-right: 10px;
 }
 
-#bold{
+.bold{
     color: #000;
     font-weight: bold;
 }
 
-#skill-marks{
+.skill-marks{
     color: #919aa2;
 }
 
@@ -225,7 +225,7 @@ main{
         width: 100%;
     }
 
-    #skill-text img{
+    .skill-text img{
         width: 20px;
         height: 20px;
     }
