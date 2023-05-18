@@ -174,12 +174,11 @@ main{
     border-radius: 50px;
     font-weight: 700;
     margin-top: 20px;
-    transition: 0.5s;
 }
 
 #continue-btn:hover{
     background: linear-gradient(0deg, var(--light-royal-blue), var(--light-slate-blue));
-    color: white;
+    cursor: pointer;
 }
 
 .attribution{
