@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-red-a: hsla(0, 100%, 67%, 0.05);
+    --orange-yellow-a: hsla(39, 100%, 56%, 0.05);
+    --green-teal-a: hsla(166, 100%, 37%, 0.05);
+    --cobalt-blue-a: hsla(234, 85%, 45%, 0.05);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+#result-box{
+    width: 700px;
+    height: 400px;
+    background-color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+#result-total, #result-detail{
+    width: 50%;
+}
+
+#result-total{
+    border-radius: 20px;
+    background: linear-gradient(0deg, var(--light-royal-blue), var(--light-slate-blue));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#your-result{
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+
+#circle{
+    background: linear-gradient(0deg, var(--persian-blue), var(--violet-blue));
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#score{
+    font-weight: 800;
+    color: var(--white);
+    font-size: 50px;
+}
+
+#total-score{
+    color: var(--light-lavender);
+}
+
+#status{
+    font-weight: 700;
+    color: var(--white);
+    font-size: 22px;
+}
+
+#comments{
+    font-weight: 500;
+    color: var(--light-lavender);
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#result-detail{
+    padding: 30px;
+}
+
+#result-detail-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#reaction, #memory, #verbal, #visual{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+#reaction{
+    background-color: var(--light-red-a);
+}
+
+#memory{
+    background-color: var(--orange-yellow-a);
+}
+
+#verbal{
+    background-color: var(--green-teal-a);
+}
+
+#visual{
+    background-color: var(--cobalt-blue-a);
+}
+
+#skill-text{
+    display: flex;
+}
+
+#reaction-name{
+    color: var(--light-red);
+}
+
+#memory-name{
+    color: var(--orange-yellow);
+}
+
+#verbal-name{
+    color: var(--green-teal);
+}
+
+#visual-name{
+    color: var(--cobalt-blue)
+}
+
+.img{
+    margin-right: 10px;
+}
+
+#bold{
+    color: #000;
+    font-weight: bold;
+}
+
+#skill-marks{
+    color: #919aa2;
+}
+
+#continue-btn{
+    background-color: var(--dark-gray-blue);
+    border: none;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+#continue-btn:hover{
+    background: linear-gradient(0deg, var(--light-royal-blue), var(--light-slate-blue));
+    color: white;
+}
+
+.attribution{
+    background-color: #fff;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.top{
+    display: none;
+}
+
+.under{
+    display: block;
+}
+
+@media (width <= 500px) {
+    main{
+        display: block;
+    }
+
+    #result-box{
+        display: block;
+        height: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        font-size: 15px;
+        box-shadow: none;
+    }
+
+    #your-result{
+        margin: 15px 0;
+        letter-spacing: 0.5px;
+    }
+
+    #result-total{
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        font-size: 15px;
+    }
+
+    #result-detail{
+        width: 100%;
+    }
+
+    #skill-text img{
+        width: 20px;
+        height: 20px;
+    }
+
+    #reaction, #memory, #verbal, #visual{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    #status{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    #circle{
+        width: 125px;
+        height: 125px;
+    }
+
+    #comments {
+        margin-bottom: 30px;
+    }
+
+    #result-detail{
+        padding: 25px;
+    }
+
+    #continue-btn{
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Hanken Grotesk', sans-serif;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .top{
+        display: block;
+    }
+
+    .under{
+        display: none;
+    }
+}
